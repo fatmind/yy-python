@@ -9,19 +9,19 @@ class QuickSort():
     implement quick sort by python
     '''
     
-    def sort(self, dig_array):
+    def sort(self, data):
         
-        if dig_array == None or len(dig_array) < 1:
-            return dig_array 
+        if data == None or len(data) < 1:
+            return data 
         
-        print dig_array
+        print data
                 
-        base_value = dig_array[0]
+        base_value = data[0]
         left_array = []
         right_array = []
         
-        for index in range(1, len(dig_array)):
-            compare_value = dig_array[index]
+        for index in range(1, len(data)):
+            compare_value = data[index]
             if(base_value > compare_value):
                 left_array.append(compare_value)
             else:
@@ -45,7 +45,8 @@ class QuickSort():
         
 if __name__ == "__main__":
     quick_sort = QuickSort()
-    dig_array = [3, 2, 5, 1, 4, 9]
-    print quick_sort.sort(dig_array)        
+    data = [3, 2, 5, 1, 4, 9]
+    print quick_sort.sort(data)        
     
+
     

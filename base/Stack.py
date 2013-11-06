@@ -8,7 +8,7 @@ class Stack():
     stack simple implement
     '''
     max = 0
-    index = -1;
+    index = -1; 
     data = []
 
     def __init__(self, max_size):
